@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background-color: skyblue;
+}
+
+#app {
+  list-style: none;
+}
+
+li {
+  border: 1px solid #ccc;
+  max-width: 350px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.sent {
+  background-color: ivory;
+}
+
+.received {
+  background-color: blueviolet;
+}

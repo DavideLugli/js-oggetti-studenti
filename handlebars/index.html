@@ -1,2 +1,36 @@
-// Esercizio 2
-// In una sottocartella handlebars fate una pagina semplice con un input e un pulsante e inviate un messaggio a cui segue una risposta come avete fatto per boolzapp, usando però handlebars.
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.2/handlebars.js" integrity="undefined" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title></title>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <input class="send-text" type="text" name="" value="" placeholder="inserisci il tuo testo">
+    <button class="invia" type="button" name="button">invia</button>
+
+  </div>
+
+  <ul id="app">
+
+  </ul>
+
+  <!-- template handlebars -->
+  <script id="entry-template" type="text/x-handlebars-template">
+    <li class="{{sentReceived}}">
+    <p>{{text}}</p>
+    <small>{{time}}</small>
+    </li>
+    </script>
+  <!--/ template handlebars -->
+
+  <script src="js/script2.js"></script>
+</body>
+
+</html>
